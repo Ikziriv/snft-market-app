@@ -1,4 +1,4 @@
-import type {App} from 'firebase-admin/app'
+import type { App } from 'firebase-admin/app'
 import { initializeApp, getApps, getApp, cert } from 'firebase-admin/app'
 import { DecodedIdToken, getAuth } from 'firebase-admin/auth'
 
