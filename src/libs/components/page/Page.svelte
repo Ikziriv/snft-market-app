@@ -1,9 +1,8 @@
 <script lang="ts">
-import { Header, Footer } from '$libs/components/index'
-import styles from "./Page.module.sass";
+import { Header, Footer } from '../index'
 </script>
 
-<div class={styles.page}>
+<div class="flex flex-col w-full h-screen md:h-auto overflow-hidden space-y-4">
     <Header />
 	<slot></slot>
     <Footer />

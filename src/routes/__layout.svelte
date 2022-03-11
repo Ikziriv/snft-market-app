@@ -1,10 +1,13 @@
 <script lang="ts">
-	import { Header, Page, Footer } from '$libs/components/index'
-	import { theme } from '$libs/stores/theme'
+	import Page from '../libs/components/page/Page.svelte'
+	import { theme } from '../libs/stores/theme'
     
-    import "../styles/vendor/app.sass";
+    import "../styles/app.css";
 </script>
 
 <Page>
     <slot />
 </Page>
+
+<style>
+</style>
