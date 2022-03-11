@@ -5,10 +5,8 @@
 </script>
 
 <script lang="ts">
-	import BigButton from '$lib/components/buttons/BigButton.svelte'
-	import PageHeading from '$lib/components/PageHeading.svelte'
-	import {sendMagicLink} from '$lib/firebase/client'
-	import {setMagicEmail} from '$lib/localStorage/magicEmail'
+	import {sendMagicLink} from '$libs/firebase/client'
+	import {setMagicEmail} from '$libs/local-storage/magic-email'
 	type FormState = 'idle' | 'submitting' | 'success' | Error
 	let state: FormState = 'idle'
 	let email: string | null = null
@@ -34,7 +32,7 @@
 </svelte:head>
 
 <section class="container flex-grow px-2 text-2xl md:px-0">
-	<PageHeading>Login</PageHeading>
+	<span class="text-lg font-bold">Login</span>
 
 	<div class="grid grid-cols-12 gap-6">
 		{#if state !== 'success'}
@@ -58,7 +56,9 @@
 					placeholder="example@with-svelte.com"
 					required
 				/>
-				<BigButton>send magic link</BigButton>
+				<button type="submit" class="px-8 py-4 bg-gray-700">
+					<span class="font-bold text-sm">Send Link</span>
+				</button>
 				{#if state === 'submitting'}
 					<p>emailing {email}...</p>
 				{/if}

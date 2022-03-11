@@ -1,11 +1,9 @@
 <script lang="ts">
-	import {isMagicLink, signInWithMagicLink} from '$lib/firebase/client'
+	import {isMagicLink, signInWithMagicLink} from '$libs/firebase/client'
 	import {onMount} from 'svelte'
 	import {goto} from '$app/navigation'
-	import {setUser} from '$lib/stores/user'
-	import BigButton from '$lib/components/buttons/BigButton.svelte'
-	import PageHeading from '$lib/components/PageHeading.svelte'
-	import {clearMagicEmail, getMagicEmail} from '$lib/localStorage/magicEmail'
+	import {setUser} from '$libs/stores/user'
+	import {clearMagicEmail, getMagicEmail} from '$libs/local-storage/magic-email'
 	let email: string | null
 	type State = 'validating' | 'idle' | 'submitting' | Error
 	let state: State = 'validating'
@@ -64,7 +62,7 @@
 	{:else if state === 'submitting'}
 		<p>🪄 We are signing you in as {email} 🪄</p>
 	{:else}
-		<PageHeading>Confirm your email to login</PageHeading>
+	<span class="text-lg font-bold">Confirm your email to login</span>
 		<div class="grid grid-cols-12 gap-4">
 			<div class="col-span-12 lg:col-span-5">
 				<p class="mb-2">
@@ -87,7 +85,9 @@
 					placeholder="example@with-svelte.com"
 					required
 				/>
-				<BigButton>finish login!</BigButton>
+				<button type="submit" class="px-8 py-4 bg-gray-700">
+					<span class="font-bold text-sm">Login Here</span>
+				</button>
 			</form>
 		</div>
 	{/if}
