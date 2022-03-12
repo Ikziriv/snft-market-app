@@ -1,10 +1,10 @@
 <script>
 
 </script>
-<footer class="bg-gray-50 px-4 py-4 border-t divide-y dark:bg-gray-800 dark:text-gray-100">
-	<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-		<div class="flex flex-col lg:w-1/3">
-			<a rel="noopener noreferrer" href="/" class="flex justify-center space-x-2 lg:justify-start">
+<footer class="bg-gray-50 p-4 px-2 md:px-16 py-4 border-t divide-y dark:bg-gray-800 dark:text-gray-100">
+	<div class="container flex flex-col justify-center md:justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+		<div class="flex flex-row md:flex-col justify-between md:justify-start w-full md:w-1/3 mb-8 md:mb-0">
+			<a rel="noopener noreferrer" href="/" class="flex justify-center space-x-2 md:justify-start">
 				<div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
 						<path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
@@ -12,12 +12,12 @@
 				</div>
 				<span class="self-center text-2xl font-black">NFTX</span>
 			</a>
-            <span class="text-xl text-base text-gray-600 md:pl-4">
+            <span class="text-xl text-base text-gray-600 md:pl-4 pr-4 md:mpr-0">
                 The New Creative <br> NFT Technology.
             </span>
 		</div>
-		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
-			<div class="space-y-3">
+		<div class="grid grid-cols-4 flex justify-center text-sm gap-x-3 gap-y-8 w-full pl-12 md:pl-0">
+			<div class="col-span-2 md:col-span-1 space-y-3">
 				<h3 class="tracking-wide uppercase dark:text-gray-50">Product</h3>
 				<ul class="space-y-1">
 					<li>
@@ -34,7 +34,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="space-y-3">
+			<div class="col-span-2 md:col-span-1 space-y-3 pl-8 md:pl-0">
 				<h3 class="tracking-wide uppercase dark:text-gray-50">Company</h3>
 				<ul class="space-y-1">
 					<li>
@@ -45,7 +45,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="space-y-3">
+			<div class="col-span-2 md:col-span-1 space-y-3">
 				<h3 class="uppercase dark:text-gray-50">Developers</h3>
 				<ul class="space-y-1">
 					<li>
@@ -59,8 +59,8 @@
 					</li>
 				</ul>
 			</div>
-			<div class="space-y-3">
-				<div class="uppercase dark:text-gray-50">Social media</div>
+			<div class="col-span-2 md:col-span-1 space-y-3 pl-8 md:pl-0">
+				<div class="uppercase dark:text-gray-50 mb-4">Social media</div>
 				<div class="flex justify-start space-x-3">
 					<a rel="noopener noreferrer" href="/" title="Facebook" class="flex items-center p-1">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
@@ -81,8 +81,8 @@
 			</div>
 		</div>
 	</div>
-    <div class="flex justify-between space-x-4 mx-auto px-10">
-	    <div class="py-6 text-sm text-center dark:text-gray-400">© 1968 Company Co. All rights reserved.</div>
-	    <div class="py-6 text-sm text-center dark:text-gray-400">We use cookies for better service.</div>
+    <div class="flex justify-between space-x-4 mx-auto px-0 md:px-4">
+	    <div class="py-6 px-4 md:px-0 text-sm text-center dark:text-gray-400">© 1968 Company Co. All rights reserved.</div>
+	    <div class="py-6 px-4 md:px-0 text-sm text-center dark:text-gray-400">We use cookies for better service.</div>
     </div>
 </footer>
