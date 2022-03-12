@@ -1,5 +1,5 @@
 import type {RequestHandler} from '@sveltejs/kit'
-import {isTheme} from '$libs/types'
+import { isTheme } from '../libs/types'
 
 // PUT /theme
 export const put: RequestHandler = async ({request}) => {

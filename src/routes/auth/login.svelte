@@ -5,8 +5,8 @@
 </script>
 
 <script lang="ts">
-	import {sendMagicLink} from '$libs/firebase/client'
-	import {setMagicEmail} from '$libs/local-storage/magic-email'
+	import {sendMagicLink} from '../../libs/firebase/client'
+	import {setMagicEmail} from '../../libs/local-storage/magic-email'
 	type FormState = 'idle' | 'submitting' | 'success' | Error
 	let state: FormState = 'idle'
 	let email: string | null = null
