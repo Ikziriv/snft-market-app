@@ -16,21 +16,62 @@
 		"preserveValueImports": true,
 		"isolatedModules": true,
 		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		/**
 			To have warnings/errors of the Svelte compiler at the correct position,
 			enable source maps by default.
 		*/
 		"sourceMap": true,
+		"importHelpers": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
+		"types": ["node", "node-fetch", "nprogress"],
 		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
 			"$libs": ["src/libs"],
-			"$libs/*": ["src/libs/*"]
+			"$libs/*": ["src/libs/*"],
+			"$stores": ["src/libs/stores/index.ts"],
+			"$stores/*": ["src/libs/stores/*"],
+			"$actions": ["src/libs/actions/index.ts"],
+			"$actions/*": ["src/libs/actions/*"],
+			"$components": ["src/libs/components/index.ts"],
+			"$components/*": ["src/libs/components/*"],
+			"$screens": ["src/libs/screens/index.ts"],
+			"$screens/*": ["src/libs/screens/*"],
+			"$models": ["src/libs/models/index.ts"],
+			"$models/*": ["src/libs/models/*"],
+			"$data": ["src/libs/data/index.ts"],
+			"$data/*": ["src/libs/data/*"],
+			"$utils": ["src/libs/utils/index.ts"],
+			"$utils/*": ["src/libs/utils/*"],
+			"$locstor": ["src/libs/local-storage/index.ts"],
+			"$locstor/*": ["src/libs/local-storage/*"],
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": [
+		"*.d.ts",
+		"src/**/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.ts",
+		"src/**/*.svelte",
+		"src/**/*.d.ts",
+		"src/*.d.ts",
+		"src/**/**/**/*.ts"
+	],
+	"exclude": [
+		"node_modules/*",
+		"dist/*",
+		".svelte/*",
+		".svelte-kit/*",
+		"build/*",
+		"coverage/*",
+		".vercel_build_output/*",
+		"functions/*",
+		"static/*",
+		"scripts/*"
+	]
 }
