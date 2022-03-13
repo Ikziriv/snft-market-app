@@ -1,4 +1,4 @@
-import {createSessionCookie, verifyIdToken} from '../../libs/firebase/admin'
+import {createSessionCookie, verifyIdToken} from '$lib/firebase/admin'
 import type {RequestHandler} from '@sveltejs/kit'
 
 const ONE_WEEK_IN_SECONDS = 7 * 24 * 60 * 60
