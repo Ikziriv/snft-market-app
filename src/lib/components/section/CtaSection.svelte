@@ -2,7 +2,7 @@
 
 </script>
 
-<section class="px-5 md:py-20 bg-white">
+<section class="px-5 md:py-20 mb-8 md:mb-16 bg-white">
 	<div class="container flex flex-col items-center justify-center mx-auto">
         
         <div class="grid grid-cols-8 gap-4 w-full h-auto px-6 py-16 flex relative">

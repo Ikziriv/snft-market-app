@@ -6,6 +6,7 @@
 
 <script lang="ts">
 	import {goto} from '$app/navigation'
+    import Profile from '$components/section/Profile.svelte'
 	import {enhanceForm} from '$actions/enhance-form'
 	import {setUser} from '$stores/user'
 	const handleLogout = () => {
@@ -18,22 +19,25 @@
 	<title>My Profile | With Svelte</title>
 </svelte:head>
 
-<section class="container flex-grow">
-	Profile
+<div class="w-full h-auto px-0 md:px-16">
+	<Profile />
+	<section class="container flex-grow">
+		Profile
 
-	<p>Hey, thanks for creating an account With Svelte!</p>
+		<p>Hey, thanks for creating an account With Svelte!</p>
 
-	<p>
-		We’ll be adding the ability to view <strong>your favourite lessons</strong> here!
-	</p>
+		<p>
+			We’ll be adding the ability to view <strong>your favourite lessons</strong> here!
+		</p>
 
-	<p>What other functionality would you like to see? Get in touch 😄</p>
+		<p>What other functionality would you like to see? Get in touch 😄</p>
 
-	<form
-		method="POST"
-		action="auth/session?_method=DELETE"
-		use:enhanceForm={{result: handleLogout}}
-	>
-		<button class="underline decoration-primary-600">logout</button>
-	</form>
-</section>
+		<form
+			method="POST"
+			action="auth/session?_method=DELETE"
+			use:enhanceForm={{result: handleLogout}}
+		>
+			<button class="underline decoration-primary-600">logout</button>
+		</form>
+	</section>
+</div>

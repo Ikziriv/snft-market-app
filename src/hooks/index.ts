@@ -1,7 +1,7 @@
-import { getIdTokenFromSessionCookie } from '../libs/firebase/admin'
-import { getCookieValue } from '../libs/get-cookie-value'
+import { getIdTokenFromSessionCookie } from '$lib/firebase/admin'
+import { getCookieValue } from '$lib/get-cookie-value'
 import type { GetSession, Handle } from '@sveltejs/kit'
-import { isTheme } from '../libs/types'
+import { isTheme } from '$lib/types'
 
 const getThemeFromCookie = (cookie: string) => {
 	const theme = getCookieValue(cookie, 'theme')

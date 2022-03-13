@@ -30,7 +30,7 @@
 						<a rel="noopener noreferrer" href="/">Pricing</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="/">FAQ</a>
+						<a rel="noopener noreferrer" sveltekit:prefetch href="/faq">FAQ</a>
 					</li>
 				</ul>
 			</div>

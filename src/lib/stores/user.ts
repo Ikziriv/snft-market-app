@@ -1,5 +1,5 @@
 import {session} from '$app/stores'
-import type {User} from '$libs/types'
+import type {User} from '$lib/types'
 import type {Writable} from 'svelte/store'
 import {derived} from 'svelte/store'
 

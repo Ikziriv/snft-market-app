@@ -4,7 +4,7 @@
 // for information about these interfaces
 declare namespace App {
 	import type { DecodedIdToken } from 'firebase-admin/auth'
-	import type { Theme, User } from '$libs/types'
+	import type { Theme, User } from '$lib/types'
 
 	interface Locals {
 		theme: Theme | null

@@ -3,7 +3,7 @@
 </script>
 
 <section class="dark:bg-gray-800 dark:text-gray-100">
-	<div class="container flex flex-col justify-start p-0 mx-auto sm:py-12 lg:py-24">
+	<div class="container flex flex-col justify-start p-0 mx-auto sm:pt-12 lg:pt-24">
 		<div class="flex flex-col space-y-4 justify-center p-6 text-center rounded-sm md:text-left">
 			<span class="uppercase text-xs font-bold">LEARN HOW TO GET STARTED</span>
             <h1 class="text-2xl md:text-5xl font-bold leading-none">

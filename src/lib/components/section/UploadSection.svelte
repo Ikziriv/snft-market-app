@@ -14,9 +14,9 @@
                 <div class="w-full h-auto rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                     <img src="img/vendor/content/upload-pic-1.jpg" alt="" class="object-cover object-center w-full rounded-t-md h-64 dark:bg-gray-500">
                     <div class="flex flex-col justify-center px-4 py-4">
-                        <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracking-wide rounded-full border-2">
+                        <a href="/upload/upload-single" class="flex items-center justify-center w-full p-2 font-semibold tracking-wide rounded-full border-2">
                             Create Single
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,9 @@
                 <div class="w-full h-auto rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                     <img src="img/vendor/content/upload-pic-2.jpg" alt="" class="object-cover object-center w-full rounded-t-md h-64 dark:bg-gray-500">
                     <div class="flex flex-col justify-center px-4 py-4">
-                        <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracking-wide rounded-full border-2">
+                        <a href="/upload/upload-multiple" class="flex items-center justify-center w-full p-2 font-semibold tracking-wide rounded-full border-2">
                             Create Multiple
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

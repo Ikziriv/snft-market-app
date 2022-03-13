@@ -1,7 +1,7 @@
 <script>
 
 </script>
-<section class="px-5 py-10 dark:bg-gray-800 dark:text-gray-100">
+<section class="px-0 py-10 dark:bg-gray-800 dark:text-gray-100">
 	<div class="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
 		<div class="relative flex justify-center md:justify-start bg-center bg-no-repeat bg-cover dark:bg-gray-500 col-span-full md:col-span-4 md:min-h-96 rounded-xl" style="background-image: url('img/vendor/content/selection-pic-1.jpg');">
 			<div class="absolute left-6 top-6">

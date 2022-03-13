@@ -55,5 +55,8 @@
         "vitest": "^0.6.0",
         "vitest-svelte-kit": "^0.0.6"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "svelte-file-dropzone": "^1.0.0-dev.1"
+    }
 }

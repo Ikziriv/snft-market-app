@@ -1,7 +1,7 @@
 <script>
 
 </script>
-<section class="px-5 md:py-20 bg-gray-50">
+<section class="px-5 md:py-20 bg-gray-50 rounded-xl">
 	<div class="container flex flex-col items-center justify-center mx-auto">
         <div class="flex justify-between w-full h-auto">
             <div class="flex flex-col space-y-2 justify-start items-start py-4 md:py-0">
