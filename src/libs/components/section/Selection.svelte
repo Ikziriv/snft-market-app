@@ -55,7 +55,7 @@
                                     </a>
                                     <div class="absolute inset-x-0 bottom-0">
                                         <div class="w-full h-auto py-2">
-                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 py-2 bg-white border-2 rounded-full">
+                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 md:px-8 py-2 text-xs md:text-md bg-white border-2 rounded-full">
                                                 Place Bid
                                             </a>
                                         </div>
@@ -78,7 +78,7 @@
                                     </a>
                                     <div class="absolute inset-x-0 bottom-0">
                                         <div class="w-full h-auto py-2">
-                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 py-2 bg-white border-2 rounded-full">
+                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 md:px-8 py-2 text-xs md:text-md bg-white border-2 rounded-full">
                                                 Place Bid
                                             </a>
                                         </div>
@@ -101,7 +101,7 @@
                                     </a>
                                     <div class="absolute inset-x-0 bottom-0">
                                         <div class="w-full h-auto py-2">
-                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 py-2 bg-white border-2 rounded-full">
+                                            <a rel="noopener noreferrer" href="/" class="w-full h-auto px-8 md:px-8 py-2 text-xs md:text-md bg-white border-2 rounded-full">
                                                 Place Bid
                                             </a>
                                         </div>

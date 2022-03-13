@@ -64,7 +64,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -110,7 +110,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -155,7 +155,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -200,7 +200,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -245,7 +245,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -290,7 +290,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -335,7 +335,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">
@@ -380,7 +380,7 @@
                             0.27 ETH
                         </span>
                     </div>
-                    <div class="flex flex-row justify-between space-x-4">
+                    <div class="flex flex-row justify-between space-x-0 md:space-x-4">
                         <div class="flex flex-col items-center justify-center">
                             <div class="flex -space-x-4">
                                 <img alt="" class="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-700" src="https://source.unsplash.com/40x40/?portrait?1">

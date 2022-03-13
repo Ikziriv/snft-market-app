@@ -4,10 +4,10 @@
 <section class="px-5 md:py-20 bg-white">
 	<div class="container flex flex-col items-center justify-center mx-auto">
         <div class="flex justify-between w-full h-auto">
-            <div class="flex flex-col space-y-2 justify-start items-start">
+            <div class="flex flex-col space-y-2 justify-start items-start py-4 md:py-0">
                 <span class="p-2 text-4xl font-black text-gray-700 uppercase">Hot Bid</span>
             </div>
-            <div class="flex flex-row space-x-4 justify-end items-end">
+            <div class="flex flex-row space-x-4 justify-center md:justify-end items-center md:items-end">
                 <span>
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path></svg>
                 </span>

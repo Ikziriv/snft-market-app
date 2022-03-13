@@ -16,11 +16,11 @@
                 <p class="text-sm sm:text-base text-gray-700 dark:text-white mt-4">
                     A creative agency that lead and inspire
                 </p>
-                <div class="flex mt-8">
-                    <a href="/" class="font-bold uppercase py-4 px-6 rounded-full text-sm bg-blue-500 border-2 border-transparent text-white mr-4 hover:bg-blue-400">
+                <div class="flex flex-col md:flex-row mt-8 space-y-4 md:space-y-0">
+                    <a href="/" class="font-bold uppercase py-4 px-4 md:px-6 rounded-full text-sm bg-blue-500 border-2 border-transparent text-white md:mr-4 hover:bg-blue-400">
                         Create Item
                     </a>
-                    <a href="/" class="font-bold uppercase py-4 px-6 rounded-full text-sm bg-transparent border-2 text-gray-800">
+                    <a href="/" class="font-bold uppercase py-4 px-4 md:px-6 rounded-full text-sm bg-transparent border-2 text-gray-800">
                         Discover more
                     </a>
                 </div>

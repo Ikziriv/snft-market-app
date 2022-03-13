@@ -3,7 +3,7 @@
 </script>
 <section class="px-5 md:py-20 bg-gray-50">
 	<div class="container flex flex-col items-center justify-center mx-auto">
-        <div class="flex justify-between w-full h-auto">
+        <div class="flex justify-between w-full h-auto py-4 md:py-0">
             <div class="flex flex-col space-y-2 justify-start items-start">
                 <p class="p-2 text-sm font-medium tracking-wider uppercase">Popular</p>
                 <button class="relative flex items-center p-0 text-gray-600 bg-transparent space-x-4">

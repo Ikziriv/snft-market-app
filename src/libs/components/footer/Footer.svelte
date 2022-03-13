@@ -16,7 +16,7 @@
                 The New Creative <br> NFT Technology.
             </span>
 		</div>
-		<div class="grid grid-cols-4 flex justify-center text-sm gap-x-3 gap-y-8 w-full pl-12 md:pl-0">
+		<div class="grid grid-cols-4 flex justify-center text-sm gap-x-3 gap-y-8 w-full px-6 md:px-0">
 			<div class="col-span-2 md:col-span-1 space-y-3">
 				<h3 class="tracking-wide uppercase dark:text-gray-50">Product</h3>
 				<ul class="space-y-1">
