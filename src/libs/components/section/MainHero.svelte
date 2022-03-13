@@ -49,10 +49,10 @@
                 </div>
             </div>
             <div class="flex flex-col items-center justify-center w-full h-auto space-y-2 md:px-8 md:py-8">
-                <a rel="noopener noreferrer" href="#" class="font-bold text-lg px-8 py-4 w-full border rounded-full text-sm dark:text-gray-400 bg-blue-500 text-white">
+                <a rel="noopener noreferrer" href="/" class="font-bold text-lg px-8 py-4 w-full border rounded-full text-sm dark:text-gray-400 bg-blue-500 text-white">
                     Place a Bid
                 </a>
-                <a rel="noopener noreferrer" href="#" class="font-bold text-lg px-8 py-4 w-full border-2 rounded-full text-sm dark:text-gray-400 bg-white">
+                <a rel="noopener noreferrer" href="/" class="font-bold text-lg px-8 py-4 w-full border-2 rounded-full text-sm dark:text-gray-400 bg-white">
                     View Item
                 </a>
             </div>

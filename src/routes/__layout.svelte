@@ -1,13 +1,13 @@
 <script lang="ts">
-	import Page from '../libs/components/page/Page.svelte'
-	import { theme } from '../libs/stores/theme'
+	import { PageLayout } from '$components/page'
+	import { theme } from '$stores/theme'
     
     import "../styles/app.css";
 </script>
 
-<Page>
+<PageLayout>
     <slot />
-</Page>
+</PageLayout>
 
 <style>
 </style>

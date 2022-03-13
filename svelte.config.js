@@ -42,12 +42,11 @@ const config = {
 
     kit: {
         adapter: adapter(),
-        ssr: true,
         prerender: {
             crawl: true,
             enabled: true,
             onError: 'fail',
-            pages: ['*'],
+            entries: ['*'],
         },
         methodOverride: {
             allowed: ['PUT', 'PATCH', 'DELETE'],
@@ -56,13 +55,16 @@ const config = {
         vite: () => ({
             resolve: {
                 alias: {
-                    $stores: resolve(__dirname, './src/libs/stores'),
-                    $screens: resolve(__dirname, './src/libs/screens'),
+                    $libs: resolve(__dirname, './src/libs'),
+                    $actions: resolve(__dirname, './src/libs/actions'),
                     $components: resolve(__dirname, './src/libs/components'),
-                    $page: resolve(__dirname, './src/libs/page'),
+                    $section: resolve(__dirname, './src/libs/components/section'),
                     $shared: resolve(__dirname, './src/libs/components/shared'),
-                    $models: resolve(__dirname, './src/libs/models'),
                     $data: resolve(__dirname, './src/libs/data'),
+                    $models: resolve(__dirname, './src/libs/models'),
+                    $screens: resolve(__dirname, './src/libs/screens'),
+                    $services: resolve(__dirname, './src/libs/services'),
+                    $stores: resolve(__dirname, './src/libs/stores'),
                     $utils: resolve(__dirname, './src/libs/utils'),
                 },
             },

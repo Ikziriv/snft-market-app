@@ -6,8 +6,8 @@
 
 <script lang="ts">
 	import {goto} from '$app/navigation'
-	import {enhanceForm} from '../../libs/actions/enhance-form'
-	import {setUser} from '../../libs/stores/user'
+	import {enhanceForm} from '$actions/enhance-form'
+	import {setUser} from '$stores/user'
 	const handleLogout = () => {
 		setUser(null)
 		goto('/')

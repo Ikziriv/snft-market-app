@@ -2,7 +2,7 @@
 
 </script>
 <div class="w-full h-auto py-4 md:py-0 space-y-2 md:space-y-0 md:h-20 flex flex-col md:flex-row justify-between md:items-center px-6 md:px-16 border-b">
-    <a rel="noopener noreferrer" href="#" class="flex font-bold text-lg px-4 py-2 w-auto border-2 rounded-full text-sm dark:text-gray-400 bg-white">
+    <a rel="noopener noreferrer" href="/" class="flex font-bold text-lg px-4 py-2 w-auto border-2 rounded-full text-sm dark:text-gray-400 bg-white">
         <span class="mr-4 py-0.5">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path></svg>
         </span>

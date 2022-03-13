@@ -1,5 +1,7 @@
 <script>
-    import SearchSection from '../../libs/components/section/SearchSection.svelte'
+	import {
+		SearchSection
+	} from '$components/section'
 </script>
 
 <div class="w-full h-auto px-0 md:px-16">

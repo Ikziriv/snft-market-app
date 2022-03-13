@@ -1,9 +1,9 @@
 <script lang="ts">
-	import {isMagicLink, signInWithMagicLink} from '../../libs/firebase/client'
+	import {isMagicLink, signInWithMagicLink} from '$libs/firebase/client'
 	import {onMount} from 'svelte'
 	import {goto} from '$app/navigation'
-	import {setUser} from '../../libs/stores/user'
-	import {clearMagicEmail, getMagicEmail} from '../../libs/local-storage/magic-email'
+	import {setUser} from '$stores/user'
+	import {clearMagicEmail, getMagicEmail} from '$libs/local-storage/magic-email'
 	let email: string | null
 	type State = 'validating' | 'idle' | 'submitting' | Error
 	let state: State = 'validating'

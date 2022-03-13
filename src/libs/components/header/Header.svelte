@@ -1,6 +1,16 @@
-<script>
-    
+<script lang="ts">
+	// Start: Local Imports
+	// Models
+	// Components
+	import { NavigationProgressBar } from '$shared/navigation';
+	// End: Local Imports
+
+	// Local properties
 </script>
+<!-- Start: Navigation Progress bar -->
+<NavigationProgressBar />
+<!-- End: Navigation Progress bar -->
+
 <header class="p-4 px-2 md:px-16 bg-gray-50 dark:bg-gray-800 dark:text-gray-100 border-b">
 	<div class="container flex justify-between h-16 mx-auto">
         <div class="flex items-start md:space-x-4 py-2">
@@ -14,7 +24,7 @@
             </a>
             <ul class="items-stretch hidden space-x-3 lg:flex py-4 pl-4 md:pl-4 border-l">
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="/" class="flex items-center font-semibold px-4 -mb-1 dark:text-violet-400 dark:border-violet-400">
+                    <a rel="noopener noreferrer" href="/discover" class="flex items-center font-semibold px-4 -mb-1 dark:text-violet-400 dark:border-violet-400">
                         Discover
                     </a>
                 </li>
@@ -35,8 +45,8 @@
 				</span>
 				<input type="search" name="Search" placeholder="Search..." class="w-32 py-2 pl-10 text-sm rounded-full sm:w-auto">
 			</div>
-			<button type="button" class="hidden px-6 py-2 font-semibold rounded-full bg-blue-500 text-white border lg:block">Upload</button>
-			<button type="button" class="hidden px-6 py-2 font-semibold rounded-full bg-white border lg:block">Connect Wallet</button>
+			<a href="/upload" class="hidden px-6 py-2 font-semibold rounded-full bg-blue-500 text-white border lg:block">Upload</a>
+			<a href="/connect-wallet" class="hidden px-6 py-2 font-semibold rounded-full bg-white border lg:block">Connect Wallet</a>
 		</div>
 		<button title="Open menu" type="button" class="p-4 lg:hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-100">
