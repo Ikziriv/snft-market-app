@@ -1,7 +1,6 @@
-import { getIdTokenFromSessionCookie } from '$lib/firebase/admin'
-import { getCookieValue } from '$lib/get-cookie-value'
-import type { GetSession, Handle } from '@sveltejs/kit'
+import type { Handle } from '@sveltejs/kit'
 import { isTheme } from '$lib/types'
+import { getCookieValue } from '$lib/get-cookie-value'
 
 const getThemeFromCookie = (cookie: string) => {
 	const theme = getCookieValue(cookie, 'theme')
@@ -11,14 +10,11 @@ const getThemeFromCookie = (cookie: string) => {
 export const handle: Handle = async ({event, resolve}) => {
 	const cookie = event.request.headers.get('cookie')
 	event.locals.theme = getThemeFromCookie(cookie)
-	event.locals.idToken = await getIdTokenFromSessionCookie(
-		getCookieValue(cookie, 'session')
-	)
 
 	return resolve(event)
 }
 
-export const getSession: GetSession = ({locals}) => {
+export const getSession = ({locals}) => {
 	const theme = locals.theme
 	const user = locals.idToken
 		? {id: locals.idToken.sub, email: locals.idToken.email}

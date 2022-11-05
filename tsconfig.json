@@ -32,8 +32,6 @@
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"],
 			"$actions": ["src/lib/actions/index.ts"],
 			"$actions/*": ["src/lib/actions/*"],
 			"$components": ["src/lib/components/index.ts"],

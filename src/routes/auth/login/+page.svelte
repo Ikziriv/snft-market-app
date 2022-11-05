@@ -1,30 +1,5 @@
-<script lang="ts" context="module">
-	import type {Load} from '@sveltejs/kit'
-	export const load: Load = ({session}) =>
-		session.user ? {redirect: '/profile', status: 302} : {status: 200}
-</script>
-
 <script lang="ts">
-	import {sendMagicLink} from '$lib/firebase/client'
-	import {setMagicEmail} from '$lib/local-storage/magic-email'
-	type FormState = 'idle' | 'submitting' | 'success' | Error
-	let state: FormState = 'idle'
-	let email: string | null = null
-	const handleSubmit: svelte.JSX.EventHandler<
-		SubmitEvent,
-		HTMLFormElement
-	> = async ({currentTarget}) => {
-		email = new FormData(currentTarget).get('email') as string
-		const redirectUrl = `${window.location.origin}/auth/confirm`
-		state = 'submitting'
-		try {
-			await sendMagicLink(email, redirectUrl)
-			setMagicEmail(email)
-			state = 'success'
-		} catch (error) {
-			state = error
-		}
-	}
+
 </script>
 
 <svelte:head>
@@ -35,47 +10,28 @@
 	<span class="text-lg font-bold">Login</span>
 
 	<div class="grid grid-cols-12 gap-6">
-		{#if state !== 'success'}
-			<div class="col-span-12 lg:col-span-5">
-				<p>You are not logged in!</p>
-				<p>
-					Please enter your email to login, using the latest in <strong
-						>Passwordless Authentication</strong
-					> 🪄💌!
-				</p>
-			</div>
-			<form
-				class="col-span-12 mt-1 flex flex-col gap-6 lg:order-1 lg:col-span-7"
-				on:submit|preventDefault={handleSubmit}
-			>
-				<input
-					class="w-full rounded p-4 shadow"
-					name="email"
-					type="email"
-					aria-label="email"
-					placeholder="example@with-svelte.com"
-					required
-				/>
-				<button type="submit" class="px-8 py-4 bg-gray-700">
-					<span class="font-bold text-sm">Send Link</span>
-				</button>
-				{#if state === 'submitting'}
-					<p>emailing {email}...</p>
-				{/if}
-				{#if state instanceof Error}
-					<p>
-						Whoops, there was an error sending your email... Maybe try again 😬
-					</p>
-				{/if}
-			</form>
-		{:else}
-			<div class="col-span-12">
-				<p>Great, we’ve sent you an email!</p>
-				<p>
-					Please find it in your <strong>{email}</strong> inbox and follow the link
-					there to login.
-				</p>
-			</div>
-		{/if}
+	<div class="col-span-12 lg:col-span-5">
+		<p>You are not logged in!</p>
+		<p>
+			Please enter your email to login, using the latest in <strong
+				>Passwordless Authentication</strong
+			> 🪄💌!
+		</p>
+	</div>
+	<form
+		class="col-span-12 mt-1 flex flex-col gap-6 lg:order-1 lg:col-span-7"
+	>
+		<input
+			class="w-full rounded p-4 shadow"
+			name="email"
+			type="email"
+			aria-label="email"
+			placeholder="example@with-svelte.com"
+			required
+		/>
+		<button type="submit" class="px-8 py-4 bg-gray-700">
+			<span class="font-bold text-sm">Send Link</span>
+		</button>
+	</form>
 	</div>
 </section>
